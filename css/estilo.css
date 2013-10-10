@@ -1,0 +1,211 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body
+{
+	background: #f4f4f4;
+}
+
+
+/*header*/
+
+header.main 
+{
+	background: #090809;
+	height: 100px;
+	width: 100%;
+	color: white;
+	margin: 5% auto;
+}
+
+
+.header-logo
+{
+	float: left;
+	width: 156px;
+	height: 59px;
+	margin: 15px 0;
+}
+
+.header-social-media
+{
+	position: absolute;
+	right: 10px;
+	width: 70px;
+	height: 32px;
+	margin: -50px 0;
+	color: #1A171B;
+	font-weight: bold;
+}
+
+
+
+.header-contacto
+{
+	position: absolute;
+	right: 0;
+	margin: -40px 100px;
+	color: #1A171B;
+	font-weight: bold;
+	font-size: .8em;
+}
+/*menu*/
+
+.main-menu
+{
+	float: right;
+	/*width: 516px;*/ 
+	height: 44px;
+	margin-right: 2em;
+}
+
+.main-menu > ul > li
+{
+	float: left;
+	padding: 1em;
+	height: 44px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.main-menu > ul > li > a
+{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 3em;
+}
+
+.main-menu > ul > li > a:hover
+{
+	color: black;
+}
+
+.main-menu > ul > li:hover
+{
+	background: #98d61f;
+	color: black;
+	line-height: 3em;
+}
+
+
+/*/menu*/
+
+
+/*/header*/
+
+
+/*Content*/
+
+.clear-fix:after 
+{ 
+	content: "";
+	display: block; 
+	visibility: hidden; 
+	height: 0; 
+	clear: both; 
+}
+
+.main
+{
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.main-100
+{
+	width: 100%;
+	background: #090809;
+
+}
+
+.content
+{
+	width: 100%;
+	max-width: 1280px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.content-title
+{
+	font-size: 24px;
+	font-weight: bold;
+	color: #090809;
+	padding: 1em;
+}
+
+.content p
+{
+	padding: .5em 0;
+}
+.cols
+{
+	width: 42%;
+	float: left;
+	margin-left: 3%;
+}
+
+.cols h2
+{
+	padding-top: .5em;
+	font-size: 3em;
+	line-height: 1em;
+
+}
+
+.cols-r
+{
+	width: 47%;
+	float: right;
+	margin-right: 3%;
+	text-align: justify;
+	font-size: 18px;
+}
+
+.content-100
+{
+	margin: 5% 0;
+}
+
+
+h4
+{
+	/*background: #897D8D;*/
+	margin: .8em 0;
+	width: 25%;
+}
+
+.cols ul > li, .cols-r ul > li
+{
+	list-style: none;
+	height: 3em;
+	background: url(../img/arr.png) no-repeat 0 5px;
+	padding-left: 35px;
+}
+
+/*pannel data*/
+
+.panel-group a
+{
+	color: #1A171B;
+	background: none;
+	padding-left: 1em;
+	background: url(../img/arr-dwn.png) 0 .5em no-repeat;
+}
+.panel-group a: hover
+{
+	color: #1A171B;
+	background: none;
+	text-decoration: underline;
+}
+
+/*/pannel data*/
+
+/*/Content*/
