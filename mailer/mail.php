@@ -39,7 +39,7 @@ try {
 
 //Form Validation(regular expresions)
 
-if (!preg_match("/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/", $email)) 
+if (!preg_match("/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/", $mail)) 
 {
   echo "<h4>Tienes que ingresar una cuenta de correo valida</h4>\r\n";
   echo "<a href='javascript:history.back(1);'>Regresar</a>";
