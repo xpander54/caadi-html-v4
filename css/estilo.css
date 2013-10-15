@@ -19,7 +19,7 @@ header.main
 	height: 100px;
 	width: 100%;
 	color: white;
-	margin: 5% auto;
+	margin: 8% auto;
 }
 
 
@@ -204,6 +204,15 @@ h4
 	color: #1A171B;
 	background: none;
 	text-decoration: underline;
+}
+
+.enviar-btn
+{
+	background: rgba(137,117,2,.8);
+	text-align: right;
+	color: #222426;
+	padding-right: 1em;
+	cursor: pointer;
 }
 
 /*/pannel data*/
