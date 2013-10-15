@@ -28,7 +28,7 @@ try {
   $mail->SetFrom('info@caadi.co', 'CAADI INFO');// SENDER
   $mail->Subject = 'Contacto CAADI Cursos';
   $mail->AltBody = 'Este mensaje esta en Html!!'; // optional - MsgHTML will create an alternate automatically
-  $msgCont = "Nuevo mensaje de contacto. www.caadi.co"."\r\n\r\n".$_POST['name']."\r\n".$_POST['mail']."\r\n\r\n".$_POST['titulo']."\r\n".$_POST['mensaje'];
+  $msgCont = "Nuevo mensaje de contacto. www.caadi.co"."\r\n\r\n".$_POST['name']."\r\n".$_POST['email']."\r\n\r\n".$_POST['asunto']."\r\n".$_POST['mensaje'];
   //$mail->MsgHTML(file_get_contents('mailer/contents.html'), $_POST["mensaje"]);
   $mail->MsgHTML(file_get_contents('mailer/contents.html'), $msgCont);
   //$mail->AddAttachment('images/phpmailer.gif');      // attachment
@@ -39,23 +39,23 @@ try {
 
 //Form Validation(regular expresions)
 
-if (!preg_match("/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/", $mail)) 
+if (!preg_match("/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/", $_POST['email'])) 
 {
   echo "<h4>Tienes que ingresar una cuenta de correo valida</h4>\r\n";
   echo "<a href='javascript:history.back(1);'>Regresar</a>";
 } 
 
-elseif ($subject == "") 
+elseif ($_POST['asunto'] == "") 
 {
   echo "<h4>Tu mensaje deve llevar asunto</h4>\r\n";
   echo "<a href='javascript:history.back(1);'>Regresar</a>";
 }
-elseif ($name == "") 
+elseif ($_POST['name'] == "") 
 {
   echo "<h4>Olvidaste poner tu nombre en el mensaje</h4>\r\n";
   echo "<a href='javascript:history.back(1);'>Regresar</a>";
 }
-elseif ($txtA == "") 
+elseif ($_POST['mensaje'] == "") 
 {
   echo "<h4>Debes escribir un mensaje!</h4>\r\n";
   echo "<a href='javascript:history.back(1);'>Regresar</a>";
