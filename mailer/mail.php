@@ -46,12 +46,6 @@ echo "<a href='javascript:history.back(1);'>Regresar</a>";
 //Form Validation
   
 
-} catch (phpmailerException $e) {
-  echo $e->errorMessage(); //Pretty error messages from PHPMailer
-} catch (Exception $e) {
-  echo $e->getMessage(); //Boring error messages from anything else!
-}
-
 
 ?>
 
