@@ -1,13 +1,15 @@
 <html>
 <head>
 
-<title>Hotel Bahia Paraiso</title>
+<title>CAADI</title>
 </head>
 <body>
 
-<?php
 
-require_once('mailer/class.phpmailer.php');
+<?php
+phpinfo();
+
+require_once('class.phpmailer.php');
 //include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
 
 $mail = new PHPMailer(true); // the true param means it will throw exceptions on errors, which we need to catch
