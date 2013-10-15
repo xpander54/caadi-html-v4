@@ -45,17 +45,17 @@ if (!preg_match("/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/", $_POST['email']
   echo "<a href='javascript:history.back(1);'>Regresar</a>";
 } 
 
-elseif ($_POST['asunto'] == "") 
+elseif ($asunto == "") 
 {
   echo "<h4>Tu mensaje deve llevar asunto</h4>\r\n";
   echo "<a href='javascript:history.back(1);'>Regresar</a>";
 }
-elseif ($_POST['name'] == "") 
+elseif ($name == "") 
 {
   echo "<h4>Olvidaste poner tu nombre en el mensaje</h4>\r\n";
   echo "<a href='javascript:history.back(1);'>Regresar</a>";
 }
-elseif ($_POST['mensaje'] == "") 
+elseif ($mensaje == "") 
 {
   echo "<h4>Debes escribir un mensaje!</h4>\r\n";
   echo "<a href='javascript:history.back(1);'>Regresar</a>";
