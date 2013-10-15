@@ -7,7 +7,6 @@
 
 
 <?php
-phpinfo();
 
 require_once('class.phpmailer.php');
 //include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
