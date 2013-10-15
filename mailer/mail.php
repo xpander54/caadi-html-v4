@@ -37,35 +37,11 @@ try {
   
 
 
-//Form Validation(regular expresions)
-
-if (!preg_match("/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/", $_POST['email'])) 
-{
-  echo "<h4>Tienes que ingresar una cuenta de correo valida</h4>\r\n";
-  echo "<a href='javascript:history.back(1);'>Regresar</a>";
-} 
-
-elseif ($asunto == "") 
-{
-  echo "<h4>Tu mensaje deve llevar asunto</h4>\r\n";
-  echo "<a href='javascript:history.back(1);'>Regresar</a>";
-}
-elseif ($name == "") 
-{
-  echo "<h4>Olvidaste poner tu nombre en el mensaje</h4>\r\n";
-  echo "<a href='javascript:history.back(1);'>Regresar</a>";
-}
-elseif ($mensaje == "") 
-{
-  echo "<h4>Debes escribir un mensaje!</h4>\r\n";
-  echo "<a href='javascript:history.back(1);'>Regresar</a>";
-}
-else
-{
-$mail->Send();
+  $mail->Send();
 echo "tu mensaje se envio con exito,\r\n muy pronto nos pondremos en contacto con usted.</p>\r\n\r\n";
 echo "<a href='javascript:history.back(1);'>Regresar</a>";
-}
+
+
 
 //Form Validation
   
@@ -75,7 +51,10 @@ echo "<a href='javascript:history.back(1);'>Regresar</a>";
 } catch (Exception $e) {
   echo $e->getMessage(); //Boring error messages from anything else!
 }
+
+
 ?>
+
 
 </body>
 </html>
