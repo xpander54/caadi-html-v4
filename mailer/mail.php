@@ -24,7 +24,7 @@ try {
   $mail->Username   = "smtp@holboxdesign.com"; // SMTP account username
   $mail->Password   = "h0lb0x";        // SMTP account password
   $mail->AddReplyTo('info@caadi.co', 'CAADI INFO'); //a quien se le deve responder ( de quien viene)
-  $mail->AddAddress('info@caadi.co', 'DESTINATARIO');
+  $mail->AddAddress('info@caadi.co', 'CAADI INFO');
   $mail->SetFrom('info@caadi.co', 'CAADI INFO');// SENDER
   $mail->Subject = 'Contacto CAADI Cursos';
   $mail->AltBody = 'Este mensaje esta en Html!!'; // optional - MsgHTML will create an alternate automatically
@@ -45,6 +45,12 @@ echo "<a href='javascript:history.back(1);'>Regresar</a>";
 
 //Form Validation
   
+
+} catch (phpmailerException $e) {
+  echo $e->errorMessage(); //Pretty error messages from PHPMailer
+} catch (Exception $e) {
+  echo $e->getMessage(); //Boring error messages from anything else!
+}
 
 
 ?>
